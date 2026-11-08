@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/rafal/.config/zsh'
+let g:netrw_dirhist_7='/home/rafal/.config'
+let g:netrw_dirhist_6='/home/rafal'
+let g:netrw_dirhist_5='/home/rafal/.config'
+let g:netrw_dirhist_4='/home/rafal/.config/nvim'
+let g:netrw_dirhist_3='/home/rafal/.config/nvim/lua'
+let g:netrw_dirhist_2='/home/rafal/.config/nvim/lua/defaults'
+let g:netrw_dirhist_1='/home/rafal/.config/nvim/lua'
+let g:netrw_dirhist_0='/home/rafal/.config/nvim'
+let g:netrw_dirhist_9='/home/rafal/.config/nvim/lua'

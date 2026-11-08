@@ -1,0 +1,72 @@
+format = """
+$username\
+$hostname\
+$directory
+$character"""
+
+#format = '''
+#[┌───────────────────>](bold green)$cmd_duration
+#[│](bold green)$username$hostname$directory$container
+#[└─>](bold green) '''
+
+
+#add_newline = true
+
+#[directory]
+#style = 'fg:yellow bg:purple'
+#truncation_length = 8
+#format = '[ $path ]($style)[$read_only ]($read_only_style) '
+
+#[hostname]
+#format = '[ $ssh_symbol$hostname ]($style)'
+#style = 'fg:red bg:green'
+
+
+#[username]
+#format = '[ $user ]($style)'
+
+command_timeout = 1000
+right_format = """$time"""
+
+[time]
+disabled = false
+style = "#939594"
+format = "[$time]($style)"
+
+
+[character]
+success_symbol = "[❯](#ff9400)"
+error_symbol = "[✗](#ff4b00)"
+
+[cmd_duration]
+style = "#f9a600"
+format = "[](fg:black bg:#f9a600)[祥$duration](bg:$style fg:black)[](fg:$style)"
+
+[directory]
+style = "#c05303"
+truncate_to_repo = false
+fish_style_pwd_dir_length = 1
+format = "[](fg:black bg:#c05303)[$path[$read_only](bg:$style fg:black)](bg:$style fg:black)[](fg:$style)"
+read_only = " "
+
+[docker_context]
+style = "fg:black bg:#eb9606"
+symbol = "🐳  "
+format = "[](fg:black bg:#eb9606)[$symbol$context]($style)[](fg:#eb9606)"
+
+[shell]
+fish_indicator = ""
+bash_indicator = "bash "
+zsh_indicator = "zsh "
+powershell_indicator = ""
+format = "[$indicator](fg:#ad4007)"
+disabled = false
+
+[hostname]
+style = "fg:black bg:#eb9606"
+format = "[](fg:black bg:#eb9606)[$ssh_symbol$hostname](fg:$style)[](fg:#eb9606)"
+
+[username]
+style_user = "#0370C0"
+style_root = "#C00311"
+format = "[](fg:black bg:$style)[$user](fg:black bg:$style)[](fg:$style)"

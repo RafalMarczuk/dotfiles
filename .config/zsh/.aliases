@@ -1,0 +1,9 @@
+alias ll="ls -laF --color=auto"
+alias vi="nvim"
+alias sudo vi="sudo nvim"
+alias home="cd $HOME"
+
+# docker
+alias dockls="docker container ls | awk 'NR > 1 {print \$NF}'"
+alias dockimg="docker images"
+
